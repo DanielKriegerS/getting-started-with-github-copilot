@@ -65,6 +65,81 @@ section h3 {
   background-color: #f9f9f9;
 }
 
+/* New: participants list styling */
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #e6e6e6;
+}
+
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  letter-spacing: 0.2px;
+}
+
+.activity-card .participants ul {
+  list-style: none; /* hide bullets */
+  margin: 0;
+  padding-left: 0;
+}
+
+.activity-card .participants li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participant-delete:hover {
+  color: #8e0000;
+}
+
+.participant-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #1a237e;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex: 0 0 28px;
+}
+
+.participant-email {
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+/* Empty state */
+.activity-card .no-participants {
+  font-style: italic;
+  color: #777;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
